@@ -17,7 +17,7 @@ const io = require('socket.io')(server);
 let messages = [];
 
 function formatDate(date) {
-  var day = date.toLocaleString('pt-BR');
+  var day = date.toUTCString('pt-BR');
   return day;
 }
 
